@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+<h1 id="tar">"Défi Palindrome ACS 2K20"</h1>
+<input type="text" name="txtname" id="numb"/><br><br>
+<button onclick="myfun()">Veuillez vérifier ici</button>
+
+    <script>
+    function myfun(){
+    var pass = document.getElementById("numb").value;
+    var rev = pass.split("").reverse().join("");
+    var text = document.getElementById("numb");
+    text.value = rev;
+    if(pass === rev){
+    alert(pass + " est un Palindrome !!");
+    }else{
+    alert(pass + " n'est pas un Palindrome !!")
+    }
+    }
+    </script>
+</body>
+</html>
